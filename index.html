@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clasificador de Comentarios Spam</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scrip.js"></script>
+  </head>
+  <body>
+    <h1>Clasificador de Comentarios Spam</h1>
+    <p>Ingresa un comentario para analizar si es spam o no:</p>
+    <textarea
+      id="comment"
+      rows="4"
+      placeholder="Escribe tu comentario aquí..."
+    ></textarea>
+    <button onclick="classify()">Analizar Comentario</button>
+    <div class="result" id="result">Resultado: (esperando entrada)</div>
+  </body>
+</html>
